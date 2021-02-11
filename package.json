@@ -1,5 +1,5 @@
 {
-  "name": "react-navigation",
+  "name": "react-navigation-v1",
   "version": "1.5.13",
   "description": "Routing and navigation for your React Native apps",
   "main": "src/react-navigation.js",
