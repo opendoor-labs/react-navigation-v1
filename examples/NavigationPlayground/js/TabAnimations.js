@@ -115,7 +115,7 @@ const TabAnimations = TabNavigator(
   {
     tabBarPosition: 'bottom',
     animationEnabled: true,
-    configureTransition: (currentTransitionProps,nextTransitionProps) => ({
+    configureTransition: (currentTransitionProps, nextTransitionProps) => ({
       timing: Animated.spring,
       tension: 1,
       friction: 35,

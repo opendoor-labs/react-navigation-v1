@@ -10,6 +10,7 @@ if (ReactNativeFeatures.supportsImprovedSpringAnimation()) {
     stiffness: 1000,
     damping: 500,
     mass: 3,
+    useNativeDriver: false,
   };
 } else {
   // This is an approximation of the IOS spring animation using a derived bezier curve
@@ -17,6 +18,7 @@ if (ReactNativeFeatures.supportsImprovedSpringAnimation()) {
     duration: 500,
     easing: Easing.bezier(0.2833, 0.99, 0.31833, 0.99),
     timing: Animated.timing,
+    useNativeDriver: false,
   };
 }
 
@@ -45,6 +47,7 @@ const FadeInFromBottomAndroid = {
     duration: 350,
     easing: Easing.out(Easing.poly(5)), // decelerate
     timing: Animated.timing,
+    useNativeDriver: false,
   },
   screenInterpolator: CardStackStyleInterpolator.forFadeFromBottomAndroid,
 };
@@ -56,6 +59,7 @@ const FadeOutToBottomAndroid = {
     duration: 230,
     easing: Easing.in(Easing.poly(4)), // accelerate
     timing: Animated.timing,
+    useNativeDriver: false,
   },
   screenInterpolator: CardStackStyleInterpolator.forFadeFromBottomAndroid,
 };
