@@ -9,7 +9,7 @@ const DefaultTransitionSpec = {
   duration: 250,
   easing: Easing.inOut(Easing.ease),
   timing: Animated.timing,
-  useNativeDriver: false,
+  useNativeDriver: true,
 };
 
 class Transitioner extends React.Component {
