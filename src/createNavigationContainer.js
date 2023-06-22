@@ -144,7 +144,7 @@ export default function createNavigationContainer(Component) {
         return;
       }
 
-      Linking.addEventListener('url', this._handleOpenURL);
+      this._urlEventListener = Linking.addEventListener('url', this._handleOpenURL);
 
       Linking.getInitialURL().then(url => url && this._handleOpenURL({ url }));
 
@@ -160,7 +160,7 @@ export default function createNavigationContainer(Component) {
 
     componentWillUnmount() {
       this._isMounted = false;
-      Linking.removeEventListener('url', this._handleOpenURL);
+      this._urlEventListener && this._urlEventListener.remove();
       this.subs && this.subs.remove();
     }
 
