@@ -4738,9 +4738,10 @@ react-native-safe-area-view@^0.9.0:
   dependencies:
     hoist-non-react-statics "^2.3.1"
 
-"react-native-tab-view@github:react-navigation/react-native-tab-view":
-  version "0.0.74"
-  resolved "https://codeload.github.com/react-navigation/react-native-tab-view/tar.gz/36ebd834d78b841fc19778c966465d02fd1213bb"
+react-native-tab-view@0.0.78:
+  version "0.0.78"
+  resolved "https://registry.yarnpkg.com/react-native-tab-view/-/react-native-tab-view-0.0.78.tgz#9b90730d89cbd34a03f0e0ab10e74ca7af945560"
+  integrity sha512-DUEM7oqLR0HZHvySahX0YcGMXHnZveMVhIiYFEqWvtVI6mjsnwg9GwEidde2l10KTXi6tzIqPy3B4J+ktBD3CQ==
   dependencies:
     prop-types "^15.6.0"
 
